@@ -1,5 +1,6 @@
 {
   "version": 2,
   "name": "codear-hacktoberfest-site",
-  "alias": ["hack.codear.org"]
+  "alias": ["hack.codear.org"],
+  "scope": ["codear"]
 }
