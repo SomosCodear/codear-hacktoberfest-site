@@ -10,18 +10,159 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header>
-      <img src="assets/codear-logo.svg" alt="CoDeAr logo" />
-      <h1>te invita a participar de</h1>
+    <header class="header">
+      <img
+        class="header__logo"
+        src="assets/codear-logo.svg"
+        alt="CoDeAr logo"
+      />
+      <h1 class="header__title">te invita a <br />participar de</h1>
     </header>
     <main>
-      <section>
+      <img
+        class="banner"
+        src="assets/hacktoberfest-banner.svg"
+        alt="Imágen de presentación de evento Hacktoberfest"
+      />
+
+      <section class="block container">
+        <div class="block__title">
+          <img
+            class="block__title__image"
+            src="assets/decorator.svg"
+            alt="Decorator"
+          />
+          <h2 class="block__title__number">01</h2>
+          <h2 class="block__title__text">_hola</h2>
+        </div>
+
+        <div class="block__text">
+          <h3 class="block__text--bold">
+            Te damos la bienvenida a Hacktoberfest®.
+          </h3>
+          <p class="block__text--normal">
+            ¿De qué se trata? Es un evento organizado por DigitalOcean, en el
+            que durante todo Octubre, celebramos y apoyamos a la comunidad del
+            software de código abierto.
+          </p>
+          <p class="block__text--normal">
+            Este año, <span class="block__text--disco">CoDeAr</span> se suma
+            como organizadora de un evento regional para alentar y fomentar la
+            participación de personas de todas las disciplinas allegadas a
+            tecnología para ayudar a mantener proyectos de código abierto.
+          </p>
+        </div>
+      </section>
+
+      <section class="block__date">
+        <div class="block__date__title">
+          <h2 class="block__date__title__text">>_ SÚMATE</h2>
+        </div>
+
+        <div class="container">
+          <div class="block__date__text">
+            <span class="block__date__text--disco"
+              >10 de <br />
+              octubre</span
+            >
+            <span class="block__date__text--jakarta"
+              >17hs.<br />
+              a 21hs.<br />
+              arg</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="block container">
+        <div class="block__title">
+          <img
+            class="block__title__image"
+            src="assets/decorator.svg"
+            alt="Decorator"
+          />
+          <h2 class="block__title__number">02</h2>
+          <h2 class="block__title__text">_AGENDA</h2>
+        </div>
+
+        <div class="block__diary">
+          <h3 class="block__diary__time">17:00hs.</h3>
+          <div class="block__diary__items">
+            <span class="block__diary__items__item">Bienvenida</span>
+          </div>
+        </div>
+        <div class="block__diary">
+          <h3 class="block__diary__time">17:00hs.</h3>
+          <div class="block__diary__items">
+            <span class="block__diary__items__item"
+              >¿Qué es Hacktoberfest®?</span
+            >
+          </div>
+        </div>
+        <div class="block__diary">
+          <h3 class="block__diary__time">17:00hs.</h3>
+          <div class="block__diary__items">
+            <span class="block__diary__items__item"
+              >Introducción al software de código abierto [OSS]</span
+            >
+          </div>
+        </div>
+        <div class="block__diary">
+          <h3 class="block__diary__time">17:00hs.</h3>
+          <div class="block__diary__items">
+            <span class="block__diary__items__item">Pull Request Demo #1</span>
+          </div>
+        </div>
+        <div class="block__diary">
+          <h3 class="block__diary__time">17:00hs.</h3>
+          <div class="block__diary__items">
+            <span class="block__diary__items__item">Introducción a GitHub</span>
+          </div>
+        </div>
+        <div class="block__diary">
+          <h3 class="block__diary__time">17:00hs.</h3>
+          <div class="block__diary__items">
+            <span class="block__diary__items__item"
+              >Ronda de presentación de proyectos</span
+            >
+          </div>
+        </div>
+        <div class="block__diary">
+          <h3 class="block__diary__time">17:00hs.</h3>
+          <div class="block__diary__items">
+            <span class="block__diary__items__item">Pull Request Demo #2</span>
+          </div>
+        </div>
+        <div class="block__diary">
+          <h3 class="block__diary__time">17:00hs.</h3>
+          <div class="block__diary__items">
+            <span class="block__diary__items__item">Q&A y cierre</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="block__how container">
+        <div class="block__title">
+          <img
+            class="block__title__image"
+            src="assets/decorator-2.svg"
+            alt="Decorator"
+          />
+          <h2 class="block__title__number">03</h2>
+          <h2 class="block__title__text white">_cómo</h2>
+        </div>
+
+        <p class="block__how__text">
+          Durante todo Octubre, te alentamos a ayudar a las personas que
+          trabajan compartiendo su código de forma abierta.
+        </p>
+
         <img
-          src="assets/hacktoberfest-banner.svg"
-          alt="Imágen de presentación de evento Hacktoberfest"
+          src="assets/browser-image.svg"
+          alt="Imagen de ejemplo de navegador web"
         />
       </section>
     </main>

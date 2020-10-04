@@ -1,0 +1,172 @@
+header {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.header__logo {
+  margin: 2.75rem;
+  margin-bottom: 0.3125rem;
+}
+
+.header__title {
+  margin: 0 auto;
+  font-weight: lighter;
+  font-size: 1rem;
+  color: var(--black);
+  font-style: normal;
+  line-height: 1.1875rem;
+  letter-spacing: 0.3em;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1.9375rem 0;
+}
+
+.banner {
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+}
+
+.container {
+  padding: 0 2.1875rem;
+}
+
+.block__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 3.125rem;
+}
+
+.block__title__image {
+  margin-right: 1.125rem;
+}
+
+.block__title__number {
+  margin: 0;
+  margin-right: 0.25rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.125rem;
+  line-height: 3.6875rem;
+  color: var(--disco);
+}
+
+.block__title__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5625rem;
+  line-height: 1.8125rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--jakarta);
+}
+
+.block__text {
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  letter-spacing: 0.1em;
+}
+
+.block__text--bold {
+  font-weight: bold;
+}
+
+.block__text--normal {
+  font-weight: 300;
+}
+
+.block__text--disco {
+  color: var(--disco);
+}
+
+.block__date {
+  margin-top: 3.125rem;
+  background-color: var(--gray-light);
+}
+
+.block__date__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 7.5625rem;
+  background-image: url('../assets/date-banner.svg');
+}
+
+.block__date__title__text {
+  margin-bottom: 3.125rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.1875rem;
+  line-height: 2.5625rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--jakarta);
+}
+
+.block__date__text {
+  padding-bottom: 4.375rem;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.block__date__text--disco {
+  font-weight: 900;
+  font-size: 3.75rem;
+  line-height: 3.125rem;
+  color: var(--disco);
+}
+
+.block__date__text--jakarta {
+  font-weight: 900;
+  font-size: 5rem;
+  line-height: 3.75rem;
+  color: var(--jakarta);
+}
+
+.block__diary__time {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  color: var(--gray-dark);
+  margin-bottom: 9px;
+}
+
+.block__diary__time::before {
+  content: '_';
+  color: var(--disco);
+}
+
+.block__diary__items {
+  width: 191px;
+  margin-left: 60px;
+  margin-bottom: 15px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.block__how {
+  margin-top: 3.125rem;
+  background-color: var(--jakarta);
+}
+
+.white {
+  color: white;
+}
+
+.block__how__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  color: var(--white);
+}
