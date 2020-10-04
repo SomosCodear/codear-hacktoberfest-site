@@ -59,3 +59,27 @@ body {
 .c-gray-dark {
   color: var(--gray-dark);
 }
+
+.bc-white {
+  background-color: var(--white);
+}
+
+.bc-black {
+  background-color: var(--black);
+}
+
+.bc-disco {
+  background-color: var(--disco);
+}
+
+.bc-jakarta {
+  background-color: var(--jakarta);
+}
+
+.bc-gray-light {
+  background-color: var(--gray-light);
+}
+
+.bc-gray-dark {
+  background-color: var(--gray-dark);
+}

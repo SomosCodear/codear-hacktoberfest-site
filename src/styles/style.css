@@ -1,4 +1,4 @@
-header {
+.header {
   display: grid;
   justify-content: center;
   text-align: center;
@@ -28,7 +28,12 @@ header {
 }
 
 .container {
-  padding: 0 2.1875rem;
+  padding-left: 2.1875rem;
+  padding-right: 2.1875rem;
+}
+
+.block {
+  padding-bottom: 3.125rem;
 }
 
 .block__title {
@@ -65,12 +70,11 @@ header {
   letter-spacing: 0.1em;
 }
 
-.block__date {
-  margin-top: 3.125rem;
+.date {
   background-color: var(--gray-light);
 }
 
-.block__date__title {
+.date__title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,7 +83,7 @@ header {
   background-image: url('../assets/date-banner.svg');
 }
 
-.block__date__title__text {
+.date__title__text {
   margin-bottom: 3.125rem;
   font-style: normal;
   font-size: 2.1875rem;
@@ -88,21 +92,21 @@ header {
   text-transform: uppercase;
 }
 
-.block__date__text {
+.date__text {
   text-transform: uppercase;
 }
 
-.block__date__text__date {
+.date__text__date {
   font-size: 3.75rem;
   line-height: 3.125rem;
 }
 
-.block__date__text__time {
+.date__text__time {
   font-size: 5rem;
   line-height: 3.75rem;
 }
 
-.block__diary__time {
+.diary__time {
   font-style: normal;
   font-size: 18px;
   line-height: 21px;
@@ -110,12 +114,12 @@ header {
   margin-bottom: 9px;
 }
 
-.block__diary__time::before {
+.diary__time::before {
   content: '_';
   color: var(--disco);
 }
 
-.block__diary__items {
+.diary__items {
   width: 191px;
   margin-left: 60px;
   margin-bottom: 15px;
@@ -124,19 +128,23 @@ header {
   line-height: 21px;
 }
 
-.block__how {
-  margin-top: 3.125rem;
+.how {
   background-color: var(--jakarta);
 }
 
-.block__how__text {
+.how__text {
   font-style: normal;
   font-size: 22px;
   line-height: 26px;
   letter-spacing: 0.1em;
 }
 
-.block__info__title {
+.info {
+  position: relative;
+  top: -3.125rem;
+}
+
+.info__title {
   font-style: normal;
   font-size: 20px;
   line-height: 23px;
@@ -145,21 +153,38 @@ header {
   text-transform: uppercase;
 }
 
-.block__info__text {
+.info__text {
   font-style: normal;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
 }
 
+.info__cta__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info__cta__container__button {
+  position: relative;
+  top: -36px;
+}
+
 .divider {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 165px;
   left: 0px;
   top: 3318px;
   background-color: var(--disco);
+}
+
+.divider__image {
+  position: relative;
+  top: -17px;
 }
 
 .divider__title {
@@ -178,4 +203,23 @@ header {
   width: 100%;
   height: 114px;
   background-color: var(--gray);
+}
+
+.container__button {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 29.5px;
+}
+
+.button {
+  height: 59px;
+  width: 258px;
+  border-radius: 50px;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
 }
