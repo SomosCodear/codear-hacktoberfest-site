@@ -19,3 +19,43 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.w-regular {
+  font-weight: normal;
+}
+
+.w-light {
+  font-weight: lighter;
+}
+
+.w-bold {
+  font-weight: bold;
+}
+
+.w-black {
+  font-weight: 900;
+}
+
+.c-white {
+  color: var(--white);
+}
+
+.c-black {
+  color: var(--black);
+}
+
+.c-disco {
+  color: var(--disco);
+}
+
+.c-jakarta {
+  color: var(--jakarta);
+}
+
+.c-gray-light {
+  color: var(--gray-light);
+}
+
+.c-gray-dark {
+  color: var(--gray-dark);
+}
