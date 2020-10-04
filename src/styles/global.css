@@ -1,0 +1,21 @@
+:root {
+  --black: #000000; /* Black */
+  --white: #ffffff; /* White */
+  --disco: #a70055; /* Disco */
+  --blue: #272d5b; /* Jakarta */
+  --gray: #c7c8ca; /* Gray */
+  --gray-light: #eeeeee; /* Gray Light */
+  --gray-dark: #636466; /* Gray Dark */
+}
+
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+}
+
+html,
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
