@@ -177,8 +177,6 @@
   justify-content: center;
   align-items: center;
   height: 165px;
-  left: 0px;
-  top: 3318px;
   background-color: var(--disco);
 }
 
@@ -188,12 +186,25 @@
 }
 
 .divider__title {
+  position: relative;
+  top: -14px;
   font-style: normal;
   font-size: 30px;
   line-height: 35px;
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.divider__button {
+  position: relative;
+  top: -6px;
+  display: flex;
+  justify-content: center;
+}
+
+.terms {
+  padding-top: 2.125rem;
 }
 
 .footer {
