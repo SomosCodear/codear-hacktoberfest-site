@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -7,7 +7,6 @@
       content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="HandheldFriendly" content="true" />
 
     <title>Hacktoberfest | Comunida de Desarrolladores de Argentina</title>
 
@@ -27,11 +26,20 @@
       <h1 class="header__title w-light c-black">te invita a participar de</h1>
     </header>
     <main>
-      <img
-        class="banner"
-        src="assets/hacktoberfest-banner.svg"
-        alt="Imágen de presentación de evento Hacktoberfest"
-      />
+      <picture>
+        <source
+          srcset="assets/hacktoberfest-banner-mobile.svg"
+          media="(min-width: 100px)"
+          sizes="1x"
+          alt="Imágen de presentación de evento Hacktoberfest"
+        />
+        <source
+          srcset="assets/hacktoberfest-banner-desktop.svg"
+          sizes="1x"
+          media="(min-width: 1100px)"
+          alt="Imágen de presentación de evento Hacktoberfest"
+        />
+      </picture>
 
       <section class="block container">
         <div class="block__title">
@@ -100,7 +108,7 @@
           </div>
         </div>
         <div class="diary">
-          <h3 class="diary__time c-gray-dark">17:00hs.</h3>
+          <h3 class="diary__time c-gray-dark">17:10hs.</h3>
           <div class="diary__items">
             <span class="diary__items__item w-light"
               >¿Qué es Hacktoberfest®?</span
@@ -108,7 +116,7 @@
           </div>
         </div>
         <div class="diary">
-          <h3 class="diary__time c-gray-dark">17:00hs.</h3>
+          <h3 class="diary__time c-gray-dark">17:30hs.</h3>
           <div class="diary__items">
             <span class="diary__items__item w-light"
               >Introducción al software de código abierto [OSS]</span
@@ -116,13 +124,13 @@
           </div>
         </div>
         <div class="diary">
-          <h3 class="diary__time c-gray-dark">17:00hs.</h3>
+          <h3 class="diary__time c-gray-dark">18:10hs.</h3>
           <div class="diary__items">
             <span class="diary__items__item w-light">Pull Request Demo #1</span>
           </div>
         </div>
         <div class="diary">
-          <h3 class="diary__time c-gray-dark">17:00hs.</h3>
+          <h3 class="diary__time c-gray-dark">18:30hs.</h3>
           <div class="diary__items">
             <span class="diary__items__item w-light"
               >Introducción a GitHub</span
@@ -130,7 +138,7 @@
           </div>
         </div>
         <div class="diary">
-          <h3 class="diary__time c-gray-dark">17:00hs.</h3>
+          <h3 class="diary__time c-gray-dark">19:10hs.</h3>
           <div class="diary__items">
             <span class="diary__items__item w-light"
               >Ronda de presentación de proyectos</span
@@ -138,13 +146,13 @@
           </div>
         </div>
         <div class="diary">
-          <h3 class="diary__time c-gray-dark">17:00hs.</h3>
+          <h3 class="diary__time c-gray-dark">19:45hs.</h3>
           <div class="diary__items">
             <span class="diary__items__item w-light">Pull Request Demo #2</span>
           </div>
         </div>
         <div class="diary">
-          <h3 class="diary__time c-gray-dark">17:00hs.</h3>
+          <h3 class="diary__time c-gray-dark">20:10hs.</h3>
           <div class="diary__items">
             <span class="diary__items__item w-light">Q&A y cierre</span>
           </div>
@@ -220,20 +228,65 @@
       </section>
     </main>
     <footer class="footer">
-      <a href="" target="_blank" rel="noopener noreferrer">
-        <img src="assets/icon-github.svg" alt="Github Icon" />
+      <a
+        class="footer__link"
+        href="https://github.com/somoscodear"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="footer__icon"
+          src="assets/icon-github.svg"
+          alt="Icono de Github"
+        />
       </a>
-      <a href="" target="_blank" rel="noopener noreferrer">
-        <img src="assets/icon-twitter.svg" alt="Twitter Icon" />
+      <a
+        class="footer__link"
+        href="https://twitter.com/somoscodear"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="footer__icon"
+          src="assets/icon-twitter.svg"
+          alt="Icono de Twitter"
+        />
       </a>
-      <a href="" target="_blank" rel="noopener noreferrer">
-        <img src="assets/icon-linkedin.svg" alt="LinkedIn Icon" />
+      <a
+        class="footer__link"
+        href="https://www.linkedin.com/company/codear/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="footer__icon"
+          src="assets/icon-linkedin.svg"
+          alt="Icono de LinkedIn"
+        />
       </a>
-      <a href="" target="_blank" rel="noopener noreferrer">
-        <img src="assets/icon-instagram.svg" alt="Instagram Icon" />
+      <a
+        class="footer__link"
+        href="https://www.instagram.com/somoscodear/?hl=es"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="footer__icon"
+          src="assets/icon-instagram.svg"
+          alt="Icono de Instagram"
+        />
       </a>
-      <a href="" target="_blank" rel="noopener noreferrer">
-        <img src="assets/icon-facebook.svg" alt="Facebook Icon" />
+      <a
+        class="footer__link"
+        href="https://www.facebook.com/SomosCodear"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="footer__icon"
+          src="assets/icon-facebook.svg"
+          alt="Icono de Facebook"
+        />
       </a>
     </footer>
   </body>

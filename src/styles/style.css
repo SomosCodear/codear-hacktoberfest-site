@@ -139,6 +139,7 @@ img {
 }
 
 .block__title__image {
+  padding-bottom: 0.5rem;
   margin-right: 1.125rem;
 }
 
@@ -156,6 +157,7 @@ img {
   line-height: 1.8125rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  padding-top: 0.8125rem;
 }
 
 .block__text {
@@ -329,6 +331,15 @@ img {
   text-transform: uppercase;
   outline: none;
   border: none;
+}
+
+.footer__lin:hover {
+  cursor: pointer;
+}
+
+.footer__icon {
+  height: 2.1875rem;
+  width: auto;
 }
 
 @media (min-width: 640px) {
