@@ -107,7 +107,7 @@ img {
   margin: 0 auto;
   font-size: 1rem;
   font-style: normal;
-  line-height: 1.1875rem;
+  line-height: 19px;
   letter-spacing: 0.3em;
   text-align: center;
   text-transform: uppercase;
@@ -148,13 +148,13 @@ img {
   margin-right: 0.25rem;
   font-style: normal;
   font-size: 3.125rem;
-  line-height: 3.6875rem;
+  line-height: 59px;
 }
 
 .block__title__text {
   font-style: normal;
   font-size: 1.5625rem;
-  line-height: 1.8125rem;
+  line-height: 29px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   padding-top: 0.8125rem;
@@ -163,7 +163,7 @@ img {
 .block__text {
   font-style: normal;
   font-size: 1rem;
-  line-height: 1.1875rem;
+  line-height: 19px;
   letter-spacing: 0.1em;
 }
 
@@ -185,7 +185,7 @@ img {
   margin-bottom: 3.125rem;
   font-style: normal;
   font-size: 2.1875rem;
-  line-height: 2.5625rem;
+  line-height: 41px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
@@ -196,12 +196,12 @@ img {
 
 .date__text__date {
   font-size: 3.75rem;
-  line-height: 3.125rem;
+  line-height: 50px;
 }
 
 .date__text__time {
   font-size: 5rem;
-  line-height: 3.75rem;
+  line-height: 60px;
 }
 
 .diary__time {
@@ -218,7 +218,6 @@ img {
 }
 
 .diary__items {
-  width: 191px;
   margin-left: 3.75rem;
   margin-bottom: 15px;
   font-style: normal;
@@ -331,6 +330,22 @@ img {
   text-transform: uppercase;
   outline: none;
   border: none;
+}
+
+.button--link {
+  height: 59px;
+  width: 258px;
+  border-radius: 50px;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 28px;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__lin:hover {
