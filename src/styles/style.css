@@ -1,7 +1,8 @@
 .header {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  text-align: center;
+  align-items: center;
 }
 
 .header__logo {
@@ -10,6 +11,7 @@
 }
 
 .header__title {
+  max-width: 12.5rem;
   margin: 0 auto;
   font-size: 1rem;
   font-style: normal;
@@ -33,6 +35,7 @@
 }
 
 .block {
+  position: relative;
   padding-bottom: 3.125rem;
 }
 
@@ -81,6 +84,7 @@
   width: 100%;
   height: 7.5625rem;
   background-image: url('../assets/date-banner.svg');
+  background-repeat: no-repeat;
 }
 
 .date__title__text {
@@ -108,7 +112,7 @@
 
 .diary__time {
   font-style: normal;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 21px;
   letter-spacing: 0.2em;
   margin-bottom: 9px;
@@ -121,10 +125,10 @@
 
 .diary__items {
   width: 191px;
-  margin-left: 60px;
+  margin-left: 3.75rem;
   margin-bottom: 15px;
   font-style: normal;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 21px;
 }
 
@@ -134,7 +138,7 @@
 
 .how__text {
   font-style: normal;
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 26px;
   letter-spacing: 0.1em;
 }
@@ -146,7 +150,7 @@
 
 .info__title {
   font-style: normal;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.2em;
@@ -155,7 +159,7 @@
 
 .info__text {
   font-style: normal;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 23px;
   text-align: center;
 }
@@ -189,7 +193,7 @@
   position: relative;
   top: -14px;
   font-style: normal;
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 35px;
   text-align: center;
   letter-spacing: 0.2em;
@@ -228,9 +232,42 @@
   width: 258px;
   border-radius: 50px;
   font-style: normal;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 28px;
   text-transform: uppercase;
   outline: none;
   border: none;
+}
+
+@media (min-width: 640px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 93.75rem) {
+  body {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  body {
+    font-size: 1.5rem;
+  }
+
+  .header {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 44px 0;
+  }
+
+  .header__logo {
+    margin: 0;
+  }
+
+  .header__title {
+    max-width: 100%;
+    margin-left: 2.625rem;
+  }
 }
