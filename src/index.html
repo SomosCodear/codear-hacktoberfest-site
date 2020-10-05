@@ -26,20 +26,23 @@
       <h1 class="header__title w-light c-black">te invita a participar de</h1>
     </header>
     <main>
-      <picture>
-        <source
-          srcset="assets/hacktoberfest-banner-mobile.svg"
-          media="(min-width: 100px)"
-          sizes="1x"
-          alt="Imágen de presentación de evento Hacktoberfest"
-        />
-        <source
-          srcset="assets/hacktoberfest-banner-desktop.svg"
-          sizes="1x"
-          media="(min-width: 1100px)"
-          alt="Imágen de presentación de evento Hacktoberfest"
-        />
-      </picture>
+      <section class="hero">
+        <picture>
+          <source
+            media="(min-width:769px)"
+            srcset="assets/hacktoberfest-banner-desktop.svg"
+          />
+          <source
+            media="(max-width:768px)"
+            srcset="assets/hacktoberfest-banner-mobile.svg"
+          />
+          <img
+            class="hero__image"
+            src="assets/hacktoberfest-banner-mobile.svg,"
+            alt="Imagen de presentación de evento Hacktoberfest realizado por CoDeAr"
+          />
+        </picture>
+      </section>
 
       <section class="block container">
         <div class="block__title">
@@ -90,7 +93,7 @@
             href=""
             target="_blank"
             rel="noopener noreferrer"
-            class="button--link bc-disco c-white w-bold"
+            class="button__link button bc-disco c-white w-bold"
           >
             Inscríbete Ya
           </a>
@@ -217,7 +220,7 @@
             href=""
             target="_blank"
             rel="noopener noreferrer"
-            class="button--link bc-jakarta c-white w-bold"
+            class="button__link button bc-jakarta c-white w-bold"
           >
             Inscríbete Ya
           </a>

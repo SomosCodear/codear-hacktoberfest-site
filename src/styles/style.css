@@ -114,11 +114,9 @@ img {
   margin: 1.9375rem 0;
 }
 
-.banner {
+.hero__image {
   width: 100%;
-  position: relative;
-  bottom: 0px;
-  left: 0px;
+  max-width: 2160px;
 }
 
 .container {
@@ -330,18 +328,14 @@ img {
   text-transform: uppercase;
   outline: none;
   border: none;
+  border: 1px solid var(--disco);
 }
 
-.button--link {
-  height: 59px;
-  width: 258px;
-  border-radius: 50px;
-  font-style: normal;
-  font-size: 1.5rem;
-  line-height: 28px;
-  text-transform: uppercase;
-  outline: none;
-  border: none;
+.button:hover {
+  cursor: pointer;
+}
+
+.button__link {
   text-decoration: none;
   display: flex;
   justify-content: center;
