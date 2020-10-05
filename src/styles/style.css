@@ -18,7 +18,9 @@ body {
   font-size: 100%;
   height: 100vh;
   padding: 0;
-  margin: 0;
+  width: 100%;
+  max-width: 2160px;
+  margin: auto;
 }
 
 img {
