@@ -131,6 +131,7 @@ img {
 
 .welcome {
   background-image: none;
+  position: relative;
 }
 
 .block {
@@ -142,7 +143,6 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 3.125rem;
 }
 
 .block__title__image {
@@ -175,7 +175,7 @@ img {
 }
 
 .date {
-  background-color: var(--gray-light);
+  background-color: rgba(222, 222, 222, 0.5);
 }
 
 .date__title {
@@ -214,6 +214,11 @@ img {
   line-height: 60px;
 }
 
+.schedule {
+  padding-top: 4rem;
+  padding-bottom: 3.4375rem;
+}
+
 .diary__time {
   font-style: normal;
   font-size: 1.125rem;
@@ -241,6 +246,10 @@ img {
 
 .how {
   background-color: var(--jakarta);
+}
+
+.block__how__content {
+  padding-top: 2.8125rem;
 }
 
 .how__cta__container__button {
@@ -341,55 +350,43 @@ img {
 .container__button {
   position: relative;
   float: right;
-  width: 465px;
   display: flex;
   justify-content: center;
+  top: calc(0% + 38.5px);
 }
 
 .button {
-  height: auto;
-  width: 100%;
-  padding: 14px 75px;
   font-style: normal;
+  font-weight: bold;
   font-size: 1.5rem;
   line-height: 28px;
   text-transform: uppercase;
-  outline: none;
+  padding: 17px 75px;
+  color: white;
+  text-align: center;
+  border-radius: 50px;
   border: none;
 }
 
-.button,
-.button:before {
+.button::after {
   border-radius: 50px;
   box-sizing: border-box;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: -6px;
+  left: -6px;
+  z-index: 1;
 }
 
-.button--border-disco:before {
+.button_border--disco::after {
   border: 2px solid var(--disco);
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  top: -6px;
-  left: -6px;
-  z-index: 1;
 }
 
-.button--border-jakarta:before {
+.button_border--jakarta::after {
   border: 2px solid var(--jakarta);
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  top: -6px;
-  left: -6px;
-  z-index: 1;
-}
-
-.button:hover {
-  cursor: pointer;
 }
 
 .button__link {
@@ -450,14 +447,21 @@ img {
   }
 
   .welcome {
+    padding-top: 4.75rem;
     background-image: url(../assets/welcome_background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .welcome__content {
+    padding-bottom: 11.5rem;
   }
 
   .block__title {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 4.75rem;
   }
 
   .block__title__image {
@@ -495,7 +499,7 @@ img {
   }
 
   .date {
-    background-image: url('../assets/date-banner-large.svg');
+    background-image: url('../assets/date-banner-large.png');
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
@@ -552,6 +556,11 @@ img {
     align-items: flex-end;
   }
 
+  .schedule {
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+  }
+
   .diary {
     display: flex;
     flex-direction: row;
@@ -579,23 +588,29 @@ img {
   }
 
   .how {
+    height: 581px;
     display: flex;
     flex-direction: row;
   }
 
-  .how__cta__container__button {
-    display: block;
-    position: relative;
-    top: 20px;
+  .block__how__content {
+    padding-top: 5.0625rem;
   }
 
-  .block__how__content {
-    width: 50%;
+  .how__cta__container__button {
+    position: relative;
+    float: left;
+    display: flex;
+    justify-content: center;
+    top: calc(0% + 38.5px);
+    left: 10.9375rem;
   }
 
   .how__image {
     display: block;
-    width: 50%;
+    width: 100%;
+    height: 100%;
+    max-width: 839px;
     padding-top: 7.75rem;
   }
 
@@ -608,6 +623,11 @@ img {
   }
 
   .info {
+    margin-top: 15.625rem;
+    margin-bottom: 11.875rem;
+  }
+
+  .info__cta__container {
     display: none;
   }
 
@@ -684,17 +704,7 @@ img {
   }
 
   .button {
-    height: auto;
-    width: auto;
-    padding: 26px 86px;
     font-size: 1.96875rem;
     line-height: 49px;
-  }
-
-  .container__button {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    top: 29.5px;
   }
 }

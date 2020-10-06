@@ -25,22 +25,22 @@
         <picture>
           <source
             media="(min-width:769px)"
-            srcset="assets/hacktoberfest-banner-desktop.svg"
+            srcset="assets/hacktoberfest-banner-desktop.png"
           />
           <source
             media="(max-width:768px)"
-            srcset="assets/hacktoberfest-banner-mobile.svg"
+            srcset="assets/hacktoberfest-banner-mobile.png"
           />
           <img
             class="hero__image"
-            src="assets/hacktoberfest-banner-mobile.svg"
+            src="assets/hacktoberfest-banner-mobile.png"
             alt="Imagen de presentación de evento Hacktoberfest realizado por CoDeAr"
           />
         </picture>
       </section>
 
       <section class="welcome">
-        <section class="block container">
+        <div class="welcome__content container">
           <div class="block__title">
             <img
               class="block__title__image"
@@ -65,9 +65,9 @@
               tecnología para ayudar a mantener proyectos de código abierto.
             </p>
           </div>
-        </section>
+        </div>
 
-        <section class="date container">
+        <div class="date container">
           <div class="date__title">
             <h2 class="w-bold date__title__text w-light c-jakarta">
               >_ SÚMATE
@@ -87,15 +87,15 @@
               href=""
               target="_blank"
               rel="noopener noreferrer"
-              class="button__link button button--border-disco bc-disco c-white w-bold"
+              class="button__link button button_border--disco bc-disco c-white w-bold"
             >
               Inscríbete Ya
             </a>
           </div>
-        </section>
+        </div>
       </section>
 
-      <section class="block container">
+      <section class="schedule container">
         <div class="block__diary">
           <div class="diary__content">
             <div class="block__title">
@@ -174,27 +174,29 @@
 
       <section class="block how container">
         <div class="block__how__content">
-          <div class="block__title">
-            <img
-              class="block__title__image"
-              src="assets/decorator-2.svg"
-              alt="Decorator"
-            />
-            <h2 class="block__title__number c-disco c-bold">03</h2>
-            <h2 class="block__title__text c-white w-light">_cómo</h2>
+          <div class="block__how__text">
+            <div class="block__title">
+              <img
+                class="block__title__image"
+                src="assets/decorator-2.svg"
+                alt="Decorator"
+              />
+              <h2 class="block__title__number c-disco c-bold">03</h2>
+              <h2 class="block__title__text c-white w-light">_cómo</h2>
+            </div>
+
+            <p class="how__text c-white">
+              Durante todo Octubre, te alentamos a ayudar a las personas que
+              trabajan compartiendo su código de forma abierta.
+            </p>
           </div>
-
-          <p class="how__text c-white">
-            Durante todo Octubre, te alentamos a ayudar a las personas que
-            trabajan compartiendo su código de forma abierta.
-          </p>
-
           <div class="how__cta__container__button">
-            <button class="button bc-disco button--border-disco c-white w-bold">
+            <button class="button bc-disco button_border--disco c-white w-bold">
               Explora
             </button>
           </div>
         </div>
+
         <img
           class="how__image"
           src="assets/browser-image-large.svg"
@@ -210,7 +212,7 @@
           />
 
           <div class="info__cta__container__button">
-            <button class="button bc-disco button--border-disco c-white w-bold">
+            <button class="button bc-disco button_border--disco c-white w-bold">
               Explora
             </button>
           </div>
@@ -254,7 +256,7 @@
             href=""
             target="_blank"
             rel="noopener noreferrer"
-            class="button__link button button--border-jakarta bc-jakarta c-white w-bold"
+            class="button__link button button_border--jakarta bc-jakarta c-white w-bold"
           >
             Inscríbete Ya
           </a>
