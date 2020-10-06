@@ -314,8 +314,12 @@ img {
 }
 
 .divider__image {
-  position: relative;
-  top: -16px;
+  position: absolute;
+  top: -104px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 124.85px;
+  height: 180.07px;
 }
 
 .divider__title {
@@ -330,10 +334,10 @@ img {
 }
 
 .divider__button {
-  position: relative;
-  top: -6px;
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  bottom: -38.5px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .terms {
@@ -433,6 +437,7 @@ img {
     flex-direction: row;
     justify-content: flex-start;
     margin: 44px 0;
+    margin-left: 14.625rem;
   }
 
   .header__logo {
@@ -448,7 +453,7 @@ img {
 
   .welcome {
     padding-top: 4.75rem;
-    background-image: url(../assets/welcome_background.svg);
+    background-image: url(../assets/welcome_background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -644,11 +649,14 @@ img {
   }
 
   .divider {
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
     height: 363px;
   }
 
   .divider__title {
-    top: -14px;
+    top: -2px;
     font-size: 5.8125rem;
     line-height: 145px;
   }
