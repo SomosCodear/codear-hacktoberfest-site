@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html lang="es-AR">
   <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1,maximum-scale=1"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
     <title>Hacktoberfest | Comunidad de Desarrolladores de Argentina</title>
 
     <link
@@ -38,7 +33,7 @@
           />
           <img
             class="hero__image"
-            src="assets/hacktoberfest-banner-mobile.svg,"
+            src="assets/hacktoberfest-banner-mobile.svg"
             alt="Imagen de presentación de evento Hacktoberfest realizado por CoDeAr"
           />
         </picture>
@@ -206,7 +201,7 @@
           </div>
         </div>
 
-        <div class="container">
+        <div class="container info__content">
           <h2 class="info__title c-disco w-light">
             ¿Buscas ayuda para un proyecto de código abierto?
             <span class="c-jakarta w-bold">¡Cuéntanos!</span>
@@ -221,11 +216,21 @@
       </section>
 
       <section class="divider">
-        <img
-          class="divider__image"
-          src="assets/codear-isologo.svg"
-          alt="CoDeAr isologo"
-        />
+        <picture>
+          <source
+            media="(min-width:769px)"
+            srcset="assets/codear-isologo-large.svg"
+          />
+          <source
+            media="(max-width:768px)"
+            srcset="assets/codear-isologo.svg"
+          />
+          <img
+            class="hero__image"
+            src="assets/codear-isologo.svg"
+            alt="Isologo de CoDeAr"
+          />
+        </picture>
 
         <h2 class="divider__title c-white w-light">¡Te esperamos!</h2>
 
