@@ -126,8 +126,7 @@ img {
 }
 
 .container {
-  padding-left: 2.1875rem;
-  padding-right: 2.1875rem;
+  padding: 0 170px;
 }
 
 .block {
@@ -403,7 +402,7 @@ img {
   .block__title__image {
     width: auto;
     height: 8.033125rem;
-    padding-bottom: 3.5rem;
+    padding-bottom: 0;
     margin-right: 2rem;
   }
 
@@ -412,6 +411,7 @@ img {
     line-height: 117px;
     letter-spacing: -0.1em;
     padding-right: 1.25rem;
+    padding-top: 3rem;
   }
 
   .block__title__text {
@@ -419,7 +419,8 @@ img {
     font-weight: 300;
     font-size: 4.6875rem;
     line-height: 88px;
-    padding-top: 0.8125rem;
+    padding-top: 3rem;
+    margin: 0;
   }
 
   .block__text {
@@ -432,12 +433,55 @@ img {
     margin-left: 10.9375rem;
   }
 
+  .date {
+    background-image: url('../assets/date-banner-large.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    width: 100%;
+    height: 644px;
+  }
+
+  .date__title {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-image: none;
+    padding: 79px 0px;
+  }
+
+  .date__title__text {
+    font-weight: 200;
+    font-size: 4.6875rem;
+    line-height: 88px;
+  }
+
+  .date__text {
+    position: relative;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .date__text__date {
+    font-size: 8.75rem;
+    line-height: 164px;
+  }
+
+  .date__text__time {
+    font-weight: 900;
+    font-size: 6.25rem;
+    line-height: 117px;
+  }
+
   .block_diaries {
     max-width: 970px;
     font-size: 2.625rem;
     line-height: 49px;
     letter-spacing: 0.2em;
     margin-left: 10.9375rem;
+    margin-top: 100px;
   }
 
   .block__diary {
@@ -470,6 +514,14 @@ img {
 
   .diary__image {
     display: block;
+  }
+
+  .how__text {
+    font-size: 2.25rem;
+    line-height: 42px;
+    letter-spacing: 0.1em;
+    max-width: 500px;
+    margin-left: 10.9375rem;
   }
 
   .info__content {
@@ -550,5 +602,12 @@ img {
     padding: 26px 86px;
     font-size: 2.625rem;
     line-height: 49px;
+  }
+
+  .container__button {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 29.5px;
   }
 }
