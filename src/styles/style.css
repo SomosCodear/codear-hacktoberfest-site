@@ -337,14 +337,42 @@ img {
   height: auto;
   width: auto;
   padding: 14px 75px;
-  border-radius: 50px;
   font-style: normal;
   font-size: 1.5rem;
   line-height: 28px;
   text-transform: uppercase;
   outline: none;
   border: none;
-  border: 1px solid var(--disco);
+}
+
+.button,
+.button:before {
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+.button--border-disco:before {
+  border: 2px solid var(--disco);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: -6px;
+  left: -6px;
+  z-index: 1;
+}
+
+.button--border-jakarta:before {
+  border: 2px solid var(--jakarta);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: -6px;
+  left: -6px;
+  z-index: 1;
 }
 
 .button:hover {
