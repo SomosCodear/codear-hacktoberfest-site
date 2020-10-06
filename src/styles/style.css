@@ -19,7 +19,7 @@ body {
   height: 100vh;
   padding: 0;
   width: 100%;
-  max-width: 2160px;
+  max-width: 1920px;
   margin: auto;
 }
 
@@ -426,6 +426,36 @@ img {
     letter-spacing: 0.1em;
     position: relative;
     margin-left: 10.9375rem;
+  }
+
+  .block_diaries {
+    max-width: 970px;
+    font-size: 2.625rem;
+    line-height: 49px;
+    letter-spacing: 0.2em;
+    margin-left: 10.9375rem;
+  }
+
+  .diary {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+
+  .diary__time {
+    margin: 0;
+    font-size: 2.625rem;
+    line-height: 49px;
+    letter-spacing: 0.2em;
+    margin-right: 39px;
+  }
+
+  .diary__items {
+    margin: 0;
+    font-style: normal;
+    font-size: 2.625rem;
+    line-height: 49px;
   }
 
   .terms {
