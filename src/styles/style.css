@@ -229,6 +229,10 @@ img {
   line-height: 21px;
 }
 
+.diary__image {
+  display: none;
+}
+
 .how {
   background-color: var(--jakarta);
 }
@@ -436,6 +440,12 @@ img {
     margin-left: 10.9375rem;
   }
 
+  .block__diary {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
   .diary {
     display: flex;
     flex-direction: row;
@@ -456,6 +466,10 @@ img {
     font-style: normal;
     font-size: 2.625rem;
     line-height: 49px;
+  }
+
+  .diary__image {
+    display: block;
   }
 
   .terms {
