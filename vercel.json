@@ -2,5 +2,19 @@
   "version": 2,
   "name": "codear-hacktoberfest-site",
   "alias": ["hack.codear.org"],
-  "scope": ["codear"]
+  "scope": ["codear"],
+  "redirects": [
+    {
+      "source": "/coc",
+      "destination": "https://docs.google.com/document/d/1HTHDu1YwzYGNergvJ7WnDW6Db_uXy6gNXUouLNHhtF0/edit"
+    },
+    {
+      "source": "/proyectos",
+      "destination": "https://forms.gle/TaBwcoqZkojfLW9y9"
+    },
+    {
+      "source": "/registro",
+      "destination": "https://organize.mlh.io/events/3961-codear-hacktoberfest-2020"
+    }
+  ]
 }
