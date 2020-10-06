@@ -126,7 +126,11 @@ img {
 }
 
 .container {
-  padding: 0 19px;
+  padding: 30px 19px;
+}
+
+.welcome {
+  background-image: none;
 }
 
 .block {
@@ -336,14 +340,15 @@ img {
 
 .container__button {
   position: relative;
-  top: 29.5px;
+  float: right;
+  width: 465px;
   display: flex;
   justify-content: center;
 }
 
 .button {
   height: auto;
-  width: auto;
+  width: 100%;
   padding: 14px 75px;
   font-style: normal;
   font-size: 1.5rem;
@@ -442,6 +447,10 @@ img {
     margin-left: 2.625rem;
     font-size: 1.5rem;
     line-height: 37px;
+  }
+
+  .welcome {
+    background-image: url(../assets/welcome_background.svg);
   }
 
   .block__title {
