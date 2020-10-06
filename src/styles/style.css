@@ -239,6 +239,10 @@ img {
   background-color: var(--jakarta);
 }
 
+.how__image {
+  display: none;
+}
+
 .how__text {
   font-style: normal;
   font-size: 1.375rem;
@@ -561,12 +565,25 @@ img {
     display: block;
   }
 
+  .how {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .how__image {
+    padding-top: 4.75rem;
+  }
+
   .how__text {
     font-size: 1.6875rem;
     line-height: 42px;
     letter-spacing: 0.1em;
     max-width: 500px;
     margin-left: 10.9375rem;
+  }
+
+  .info {
+    display: none;
   }
 
   .info__content {
