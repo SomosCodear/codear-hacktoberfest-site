@@ -239,6 +239,10 @@ img {
   background-color: var(--jakarta);
 }
 
+.how__cta__container__button {
+  display: none;
+}
+
 .how__image {
   display: none;
 }
@@ -570,8 +574,20 @@ img {
     flex-direction: row;
   }
 
+  .how__cta__container__button {
+    display: block;
+    position: relative;
+    top: 20px;
+  }
+
+  .block__how__content {
+    width: 50%;
+  }
+
   .how__image {
-    padding-top: 4.75rem;
+    display: block;
+    width: 50%;
+    padding-top: 7.75rem;
   }
 
   .how__text {
