@@ -121,6 +121,7 @@ img {
 }
 
 .hero__image {
+  display: block;
   width: 100%;
   height: auto;
   max-width: 2160px;
@@ -238,7 +239,7 @@ img {
   margin-bottom: 15px;
   font-style: normal;
   font-size: 1.125rem;
-  line-height: 0;
+  line-height: 21px;
 }
 
 .diary__image {
@@ -474,6 +475,102 @@ img {
     font-size: 4.6875rem;
     line-height: 117px;
   }
+
+  .diary__content {
+    width: 100%;
+  }
+
+  .block__diary {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .diary__image {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    padding-left: 100px;
+  }
+
+  .how {
+    height: 581px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .block__how__content {
+    padding-top: 5.0625rem;
+    min-width: 40rem;
+  }
+
+  .how__cta__container__button {
+    position: relative;
+    float: left;
+    display: flex;
+    justify-content: center;
+    top: calc(0% + 28.5px);
+    left: 10.9375rem;
+  }
+
+  .how__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 839px;
+    padding-top: 7.75rem;
+    min-width: 0;
+  }
+
+  .how__text {
+    font-size: 1.6875rem;
+    line-height: 42px;
+    letter-spacing: 0.1em;
+    max-width: 500px;
+    margin-left: 3.9375rem;
+  }
+
+  .info__cta__container {
+    display: none;
+  }
+
+  .text--round {
+    background-color: var(--jakarta);
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+  }
+
+  .divider {
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    height: 163px;
+  }
+
+  .divider__title {
+    top: -2px;
+    font-size: 2.8125rem;
+    line-height: 145px;
+  }
+
+  .divider__image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -68px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 80px;
+  }
+
+  .info__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -554,15 +651,9 @@ img {
     max-width: 970px;
     font-size: 1.96875rem;
     line-height: 49px;
-    letter-spacing: 0.2em;
+    letter-spacing: 0rem;
     margin-left: 10.9375rem;
     margin-top: 100px;
-  }
-
-  .block__diary {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
   }
 
   .schedule {
@@ -585,48 +676,6 @@ img {
     margin-right: 39px;
   }
 
-  .diary__items {
-    margin: 0;
-    font-style: normal;
-    font-size: 1.96875rem;
-    line-height: 0;
-  }
-
-  .diary__image {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .how {
-    height: 581px;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .block__how__content {
-    padding-top: 5.0625rem;
-    min-width: 40rem;
-  }
-
-  .how__cta__container__button {
-    position: relative;
-    float: left;
-    display: flex;
-    justify-content: center;
-    top: calc(0% + 28.5px);
-    left: 10.9375rem;
-  }
-
-  .how__image {
-    width: 100%;
-    height: auto;
-    display: block;
-    max-width: 839px;
-    padding-top: 7.75rem;
-    min-width: 0;
-  }
-
   .how__text {
     font-size: 1.6875rem;
     line-height: 42px;
@@ -635,20 +684,16 @@ img {
     margin-left: 10.9375rem;
   }
 
+  .diary__items {
+    margin: 0;
+    font-style: normal;
+    font-size: 1.96875rem;
+    line-height: 49px;
+  }
+
   .info {
     margin-top: 15.625rem;
     margin-bottom: 11.875rem;
-  }
-
-  .info__cta__container {
-    display: none;
-  }
-
-  .info__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
   .info__title {
@@ -722,12 +767,5 @@ img {
   .button {
     font-size: 1.96875rem;
     line-height: 49px;
-  }
-
-  .text--round {
-    background-color: var(--jakarta);
-    color: white;
-    border-radius: 50px;
-    padding: 10px 20px;
   }
 }
