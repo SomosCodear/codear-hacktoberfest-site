@@ -104,6 +104,7 @@ img {
 }
 
 .header__logo {
+  display: block;
   margin: 2.75rem;
   margin-bottom: 0.3125rem;
 }
@@ -114,7 +115,6 @@ img {
   font-size: 1rem;
   font-style: normal;
   line-height: 19px;
-  letter-spacing: 0.3em;
   text-align: center;
   text-transform: uppercase;
   margin: 1.9375rem 0;
@@ -164,7 +164,6 @@ img {
   font-style: normal;
   font-size: 1.5625rem;
   line-height: 29px;
-  letter-spacing: 0.2em;
   text-transform: uppercase;
   padding-top: 0.8125rem;
 }
@@ -225,7 +224,6 @@ img {
   font-style: normal;
   font-size: 1.125rem;
   line-height: 21px;
-  letter-spacing: 0.2em;
   margin-bottom: 9px;
 }
 
@@ -428,9 +426,65 @@ img {
     display: none;
   }
 
-  .welcome {
-    padding-top: 4.75rem;
-    background-image: none;
+  .container {
+    padding: 0 170px;
+  }
+
+  .header {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 44px 0;
+    margin-left: 14.625rem;
+  }
+
+  .header__logo {
+    margin: 0;
+  }
+
+  .header__title {
+    max-width: 100%;
+    margin-left: 2.625rem;
+    font-size: 1.5rem;
+    line-height: 37px;
+  }
+
+  .block__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .block__title__image {
+    height: 8.033125rem;
+    padding-bottom: 0;
+    margin-right: 1.5rem;
+  }
+
+  .block__title__number {
+    font-size: 4.6875rem;
+    line-height: 117px;
+    letter-spacing: -0.1em;
+    padding-right: 1.25rem;
+    padding-top: 3rem;
+  }
+
+  .block__title__text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3.515625rem;
+    line-height: 88px;
+    padding-top: 3rem;
+    margin: 0;
+  }
+
+  .block__text {
+    max-width: 698px;
+    font-style: normal;
+    font-size: 1.375rem;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    position: relative;
+    margin-left: 10.9375rem;
   }
 
   .date {
@@ -476,184 +530,19 @@ img {
     line-height: 117px;
   }
 
-  .diary__content {
-    width: 100%;
+  .block_diaries {
+    max-width: 970px;
+    font-size: 1.96875rem;
+    line-height: 49px;
+    letter-spacing: 0.2em;
+    margin-left: 10.9375rem;
+    margin-top: 100px;
   }
 
   .block__diary {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: flex-end;
-  }
-
-  .diary__image {
-    max-width: 400px;
-    height: auto;
-    display: block;
-    padding-left: 100px;
-  }
-
-  .how {
-    height: 581px;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .block__how__content {
-    padding-top: 5.0625rem;
-    min-width: 40rem;
-  }
-
-  .how__cta__container__button {
-    position: relative;
-    float: left;
-    display: flex;
-    justify-content: center;
-    top: calc(0% + 28.5px);
-    left: 10.9375rem;
-  }
-
-  .how__image {
-    width: 100%;
-    height: auto;
-    display: block;
-    max-width: 839px;
-    padding-top: 7.75rem;
-    min-width: 0;
-  }
-
-  .how__text {
-    font-size: 1.6875rem;
-    line-height: 42px;
-    letter-spacing: 0.1em;
-    max-width: 500px;
-    margin-left: 3.9375rem;
-  }
-
-  .info__cta__container {
-    display: none;
-  }
-
-  .text--round {
-    background-color: var(--jakarta);
-    color: white;
-    border-radius: 50px;
-    padding: 10px 20px;
-  }
-
-  .divider {
-    position: relative;
-    box-sizing: border-box;
-    text-align: center;
-    height: 163px;
-  }
-
-  .divider__title {
-    top: -2px;
-    font-size: 2.8125rem;
-    line-height: 145px;
-  }
-
-  .divider__image {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: -68px;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 80px;
-  }
-
-  .info__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media (min-width: 1600px) {
-  .container {
-    padding: 0 170px;
-  }
-
-  .header {
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 44px 0;
-    margin-left: 14.625rem;
-  }
-
-  .header__logo {
-    margin: 0;
-  }
-
-  .header__title {
-    max-width: 100%;
-    margin-left: 2.625rem;
-    font-size: 1.5rem;
-    line-height: 37px;
-  }
-
-  .welcome {
-    padding-top: 4.75rem;
-    background-image: url(../assets/welcome_background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .welcome__content {
-    padding-bottom: 11.5rem;
-  }
-
-  .block__title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .block__title__image {
-    height: 8.033125rem;
-    padding-bottom: 0;
-    margin-right: 1.5rem;
-  }
-
-  .block__title__number {
-    font-size: 4.6875rem;
-    line-height: 117px;
-    letter-spacing: -0.1em;
-    padding-right: 1.25rem;
-    padding-top: 3rem;
-  }
-
-  .block__title__text {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 3.515625rem;
-    line-height: 88px;
-    padding-top: 3rem;
-    margin: 0;
-  }
-
-  .block__text {
-    max-width: 698px;
-    font-style: normal;
-    font-size: 1.375rem;
-    line-height: 26px;
-    letter-spacing: 0.1em;
-    position: relative;
-    margin-left: 10.9375rem;
-  }
-
-  .block_diaries {
-    max-width: 970px;
-    font-size: 1.96875rem;
-    line-height: 49px;
-    letter-spacing: 0rem;
-    margin-left: 10.9375rem;
-    margin-top: 100px;
   }
 
   .schedule {
@@ -676,6 +565,45 @@ img {
     margin-right: 39px;
   }
 
+  .diary__items {
+    margin: 0;
+    font-style: normal;
+    font-size: 1.96875rem;
+    line-height: 49px;
+  }
+
+  .how {
+    height: 581px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .block__how__content {
+    padding-top: 5.0625rem;
+  }
+
+  .how__cta__container__button {
+    position: relative;
+    float: left;
+    display: flex;
+    justify-content: center;
+    top: calc(0% + 28.5px);
+    left: 10.9375rem;
+  }
+
+  .block__how__text {
+    min-width: 40rem;
+  }
+
+  .how__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 839px;
+    padding-top: 7.75rem;
+    min-width: 0;
+  }
+
   .how__text {
     font-size: 1.6875rem;
     line-height: 42px;
@@ -684,16 +612,20 @@ img {
     margin-left: 10.9375rem;
   }
 
-  .diary__items {
-    margin: 0;
-    font-style: normal;
-    font-size: 1.96875rem;
-    line-height: 49px;
-  }
-
   .info {
     margin-top: 15.625rem;
     margin-bottom: 11.875rem;
+  }
+
+  .info__cta__container {
+    display: none;
+  }
+
+  .info__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .info__title {
@@ -767,5 +699,32 @@ img {
   .button {
     font-size: 1.96875rem;
     line-height: 49px;
+  }
+
+  .text--round {
+    background-color: var(--jakarta);
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .welcome {
+    padding-top: 4.75rem;
+    background-image: url(../assets/welcome_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .welcome__content {
+    padding-bottom: 5.5rem;
+  }
+
+  .diary__image {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 }
