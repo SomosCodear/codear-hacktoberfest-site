@@ -203,6 +203,7 @@ img {
 
 .date__text {
   text-transform: uppercase;
+  margin-bottom: 40px;
 }
 
 .date__text__date {
@@ -267,8 +268,18 @@ img {
   letter-spacing: 0.1em;
 }
 
+.info__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .info {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  top: -50px;
 }
 
 .info__title {
@@ -358,17 +369,22 @@ img {
   top: calc(0% + 38.5px);
 }
 
+.margin__button--top {
+  margin-top: 40px;
+}
+
 .button {
   font-style: normal;
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 28px;
   text-transform: uppercase;
-  padding: 17px 75px;
+  padding: 17px 30px;
   color: white;
   text-align: center;
   border-radius: 50px;
   border: none;
+  min-width: 200px;
 }
 
 .button::after {
@@ -533,6 +549,7 @@ img {
     flex-direction: column;
     align-items: flex-end;
     padding-right: 20px;
+    margin-bottom: 0;
   }
 
   .date__text__date {
