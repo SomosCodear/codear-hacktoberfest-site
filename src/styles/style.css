@@ -446,6 +446,7 @@ img {
 }
 
 .sponsors__title {
+  max-width: 220px;
   font-style: normal;
   font-weight: 200;
   font-size: 2rem;
@@ -777,6 +778,7 @@ img {
   }
 
   .sponsors__title {
+    max-width: 415px;
     width: 100%;
     font-size: 3.515625rem;
     line-height: 75px;
