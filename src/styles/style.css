@@ -451,7 +451,7 @@ img {
   font-style: normal;
   font-weight: 200;
   font-size: 2rem;
-  line-height: 37px;
+  line-height: 115%;
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -781,8 +781,8 @@ img {
   .sponsors__title {
     max-width: 415px;
     width: 100%;
-    font-size: 3.515625rem;
-    line-height: 75px;
+    font-size: 3rem;
+    line-height: 130%;
   }
 
   .sponsors__image {
@@ -809,5 +809,9 @@ img {
     max-width: 500px;
     height: auto;
     display: block;
+  }
+
+  .sponsors__title {
+    font-size: 3.5rem;
   }
 }
