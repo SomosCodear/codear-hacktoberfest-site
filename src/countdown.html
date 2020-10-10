@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+
+  <link rel="shortcut icon" sizes="16x16" href="assets/icons/favicon-16x16.png" />
+  <link rel="shortcut icon" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+  <link rel="shortcut icon" sizes="96x96" href="assets/icons/favicon-96x96.png" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    video {
+      position: absolute;
+      z-index: 0;
+      width: 100%;
+      opacity: 0.3;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    body {
+      display: flex;
+      background: #000;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #countdown {
+      font-size: 5rem;
+      font-family: Roboto;
+      font-weight: 100;
+      color: #ffffff;
+      z-index: 1;
+    }
+
+    #countdown::before,
+    #countdown::after {
+      display: block;
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 25rem;
+      height: 25rem;
+      border: 5px solid #fff;
+      border-radius: 50%;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    }
+
+    #countdown::before {
+      margin-left: -12.5rem;
+      margin-top: -12.5rem;
+      z-index: 2;
+      animation: 1s rotate infinite;
+    }
+
+    #countdown::after {
+      border-width: 20px;
+      margin-left: -13.5rem;
+      margin-top: -13.5rem;
+      animation: 1s rotate-hue infinite;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      filter: blur(50px);
+    }
+
+    @keyframes rotate {
+      0% {
+        border-top-color: #a70050;
+        transform: rotate(0deg);
+      }
+
+      50% {
+        border-top-color: #fff;
+      }
+
+      100% {
+        border-top-color: #a70050;
+        transform: rotate(359deg);
+      }
+    }
+
+    @keyframes rotate-hue {
+      0% {
+        border-top-color: #a70050;
+        transform: rotate(0deg);
+      }
+
+      50% {
+        border-top-color: #fff;
+      }
+
+      100% {
+        border-top-color: #a70050;
+        transform: rotate(359deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main id="countdown"></main>
+  <video src="assets/videos/background.mp4" autoplay muted loop></video>
+  <script>
+    const countdown = document.getElementById("countdown");
+    const target = new Date(2020, 9, 10, 17, 0, 0).valueOf() / 1000;
+    let now = new Date().valueOf() / 1000;
+
+    const extractRemainder = (num) => Number(`0.${num.toString().split(".")[1]}`);
+    const zeroLead = (num) => parseInt(num).toString().padStart(2, "0");
+
+    const tick = () => {
+      const diff = target - now;
+
+      const days = diff / 86400;
+      const daysRemainder = extractRemainder(days);
+      const hours = daysRemainder * 24;
+      const hoursRemainder = extractRemainder(hours);
+      const minutes = hoursRemainder * 60;
+      const minutesRemainder = extractRemainder(minutes);
+      const seconds = minutesRemainder * 60;
+
+      const remainingTime = `${zeroLead(hours)}:${zeroLead(minutes)}:${zeroLead(seconds)}`;
+      countdown.textContent = remainingTime;
+
+      now += 1;
+    }
+
+    const timer = setInterval(tick, 1000);
+    tick();
+  </script>
+</body>

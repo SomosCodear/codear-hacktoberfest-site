@@ -1,7 +1,9 @@
 {
   "version": 2,
   "name": "codear-hacktoberfest-site",
-  "alias": ["hack.codear.org"],
+  "alias": [
+    "hack.codear.org"
+  ],
   "redirects": [
     {
       "source": "/coc",
@@ -14,6 +16,12 @@
     {
       "source": "/registro",
       "destination": "https://organize.mlh.io/participants/events/3961-codear-hacktoberfest-2020"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/countdown",
+      "destination": "/countdown.html"
     }
   ]
 }

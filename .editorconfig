@@ -14,7 +14,7 @@ insert_final_newline = true
 charset = utf-8
 
 # 2 space indentation
-[*.{js,jsx,ts,tsx,json}]
+[*.{js,jsx,ts,tsx,json,html}]
 indent_style = tabs
 indent_size = 2
 
