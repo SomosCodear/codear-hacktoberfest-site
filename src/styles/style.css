@@ -128,7 +128,7 @@ img {
 }
 
 .container {
-  padding: 30px 19px;
+  padding: 1.875rem 1.1875rem;
 }
 
 .welcome {
@@ -175,74 +175,43 @@ img {
   letter-spacing: 0.1em;
 }
 
-.date {
-  background-color: rgba(222, 222, 222, 0.5);
+.replay {
+  background: linear-gradient(to bottom, rgba(222, 222, 222, 0.5) 6.5rem, transparent 0);;
 }
 
-.date__title {
+.replay__title {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 7.5625rem;
-  background-image: url('../assets/date-banner.svg');
-  background-position-x: center;
-  background-position-y: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
-.date__title__text {
-  margin-bottom: 3.125rem;
+.replay__title__text {
   font-style: normal;
   font-size: 2.1875rem;
-  line-height: 41px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
-.date__text {
-  text-transform: uppercase;
-  margin-bottom: 40px;
+.replay__video {
+  padding-top: 56.25%;
+  position: relative;
 }
 
-.date__text__date {
-  font-size: 3.75rem;
-  line-height: 50px;
+.replay__video__youtube {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
 }
 
-.date__text__time {
-  font-size: 5rem;
-  line-height: 60px;
+.replay__content {
+  line-height: 120%;
+  letter-spacing: 0.1rem;
 }
 
-.schedule {
-  padding-top: 4rem;
-  padding-bottom: 3.4375rem;
-}
-
-.diary__time {
-  font-style: normal;
-  font-size: 1.125rem;
-  line-height: 21px;
-  margin-bottom: 9px;
-}
-
-.diary__time::before {
-  content: '_';
-  color: var(--disco);
-}
-
-.diary__items {
-  margin-left: 3.75rem;
-  margin-bottom: 15px;
-  font-style: normal;
-  font-size: 1.125rem;
-  line-height: 21px;
-}
-
-.diary__image {
-  display: none;
+.replay__content__text {
+  font-weight: 300;
 }
 
 .how {
@@ -348,6 +317,47 @@ img {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.projects {
+  max-width: 20rem;
+  margin: auto;
+  padding: 3.375rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 4rem;
+}
+
+.projects__project {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects__project__title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.projects__project__description {
+  margin: 1rem 0;
+  line-height: 130%;
+  flex: 1;
+}
+
+.projects__project__repo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.projects__project__repo__img {
+  flex-shrink: 0;
+  display: block;
+  margin-right: 0.75rem;
 }
 
 .terms {
@@ -548,89 +558,44 @@ img {
     margin-left: 10.9375rem;
   }
 
-  .date {
-    background-image: url('../assets/date-banner-large.png');
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
-    background-size: contain;
-    height: 644px;
+  .welcome {
+    padding-top: 4.75rem;
+    background-image: url(../assets/welcome_background.png), url(../assets/replay_background.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, auto;
+    background-position: top, bottom 7rem right 7rem;
   }
 
-  .date__title {
+  .welcome__content {
+    padding-bottom: 11.125rem;
+  }
+
+  .replay__content {
+    width: 28rem;
+    padding-top: 6.25rem;
+    padding-bottom: 5.25rem;
+    padding-left: 20.625rem;
+    font-size: 2.25rem;
+  }
+
+  .replay {
+    background: linear-gradient(to bottom, rgba(222, 222, 222, 0.5) 40.25rem, transparent 0);;
+  }
+
+  .replay__title {
     display: flex;
     justify-content: flex-end;
-    width: 100%;
-    background-image: none;
-    padding: 79px 0px;
+    padding: 1rem 10rem 0;
   }
 
-  .date__title__text {
+  .replay__title__text {
     font-weight: 200;
     font-size: 3.515625rem;
-    line-height: 88px;
+    line-height: 5rem;
   }
 
-  .date__text {
-    position: relative;
-    bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-right: 20px;
-    margin-bottom: 0;
-  }
-
-  .date__text__date {
-    font-size: 6.5625em;
-    line-height: 164px;
-  }
-
-  .date__text__time {
-    font-weight: 900;
-    font-size: 4.6875rem;
-    line-height: 117px;
-  }
-
-  .block_diaries {
-    max-width: 970px;
-    font-size: 1.96875rem;
-    line-height: 49px;
-    margin-left: 10.9375rem;
-    margin-top: 100px;
-  }
-
-  .block__diary {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-  }
-
-  .schedule {
-    padding-top: 5rem;
-    padding-bottom: 7rem;
-  }
-
-  .diary {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin-bottom: 40px;
-  }
-
-  .diary__time {
-    margin: 0;
-    font-size: 1.96875rem;
-    line-height: 49px;
-    letter-spacing: 0.2em;
-    margin-right: 39px;
-  }
-
-  .diary__items {
-    margin: 0;
-    font-style: normal;
-    font-size: 1.96875rem;
-    line-height: 49px;
+  .replay__video {
+    margin: 0 5.5rem;
   }
 
   .how {
@@ -675,7 +640,7 @@ img {
 
   .info {
     margin-top: 15.625rem;
-    margin-bottom: 11.875rem;
+    margin-bottom: 5rem;
   }
 
   .info__cta__container {
@@ -707,6 +672,30 @@ img {
     line-height: 145px;
   }
 
+  .projects {
+    max-width: 85rem;
+    padding: 10rem 0 5rem;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 7rem;
+  }
+
+  .projects__project {
+    max-width: 40rem;
+  }
+
+  .projects__project__title {
+    font-size: 3rem;
+  }
+
+  .projects__project__description {
+    font-size: 2.25rem;
+  }
+
+  .projects__project__repo {
+    font-size: 1.5rem;
+  }
+
   .terms {
     padding-top: 7.8125rem;
     padding-bottom: 4.6875rem;
@@ -717,7 +706,6 @@ img {
   }
 
   .info__text {
-    max-width: 780px;
     font-style: normal;
     font-size: 1.640625rem;
     line-height: 41px;
@@ -792,25 +780,6 @@ img {
 }
 
 @media (min-width: 1600px) {
-  .welcome {
-    padding-top: 4.75rem;
-    background-image: url(../assets/welcome_background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .welcome__content {
-    padding-bottom: 5.5rem;
-  }
-
-  .diary__image {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    display: block;
-  }
-
   .sponsors__title {
     font-size: 3.5rem;
   }
